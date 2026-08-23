@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvelero_docs=self.webpackChunkvelero_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/vui-docs/blog","blogTitle":"Blog","authorsListPath":"/vui-docs/blog/authors"}')}}]);

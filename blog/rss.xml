@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>VUI Simplify Your Velero Backups Management Blog</title>
-        <link>https://vui.seriohub.com/blog</link>
+        <link>https://seriohub.github.io/vui-docs/blog</link>
         <description>VUI Simplify Your Velero Backups Management Blog</description>
         <lastBuildDate>Sat, 14 Jun 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,30 +10,30 @@
         <language>en</language>
         <item>
             <title><![CDATA[VUI 0.4.1]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.4.1</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.4.1</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.4.1</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.4.1</guid>
             <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Bugfixes, schema improvements, and a new 14-day trial for VUI-Core.]]></description>
             <content:encoded><![CDATA[<p>We’re happy to announce the release of <strong>VUI 0.4.1</strong>, a patch version that addresses key schema issues and improves the reliability of backup handling — along with a few UI refinements and a <strong>new trial mode for VUI-Core</strong>.</p>
 <p>This update is part of our ongoing effort to improve multi-cluster reliability and enhance the day-to-day experience for users working with Velero.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-vui-core-trial-mode">🆕 VUI-Core Trial Mode<a href="https://vui.seriohub.com/blog/vui-0.4.1#-vui-core-trial-mode" class="hash-link" aria-label="Direct link to 🆕 VUI-Core Trial Mode" title="Direct link to 🆕 VUI-Core Trial Mode">​</a></h2>
-<p>Starting with version 0.4.1, you can now test <strong><a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster-installation">VUI-Core</a> in demo mode</strong> for <strong>14 days</strong>.<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-vui-core-trial-mode">🆕 VUI-Core Trial Mode<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.1#-vui-core-trial-mode" class="hash-link" aria-label="Direct link to 🆕 VUI-Core Trial Mode" title="Direct link to 🆕 VUI-Core Trial Mode">​</a></h2>
+<p>Starting with version 0.4.1, you can now test <strong><a href="https://seriohub.github.io/vui-docs/docs/getting-started/installation/scenarios/core-cluster-installation">VUI-Core</a> in demo mode</strong> for <strong>14 days</strong>.<br>
 <!-- -->This allows you to evaluate centralized multi-cluster features without needing to activate a sponsor license immediately.</p>
 <p>👉 Trial mode is enabled automatically when a valid license is not found.</p>
 <blockquote>
 <p>ℹ️ <strong>Note</strong>: <code>vui-core</code> is the only component in the VUI ecosystem not distributed under the Apache 2.0 license.<br>
-<!-- -->It is released under a separate <a href="https://vui.seriohub.com/docs/licenses/vui-core-license"><strong>End User License Agreement (EULA)</strong></a>.</p>
+<!-- -->It is released under a separate <a href="https://seriohub.github.io/vui-docs/docs/licenses/vui-core-license"><strong>End User License Agreement (EULA)</strong></a>.</p>
 </blockquote>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-api-fixes">🐛 API Fixes<a href="https://vui.seriohub.com/blog/vui-0.4.1#-api-fixes" class="hash-link" aria-label="Direct link to 🐛 API Fixes" title="Direct link to 🐛 API Fixes">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backuprepository-schema-validation">BackupRepository Schema Validation<a href="https://vui.seriohub.com/blog/vui-0.4.1#backuprepository-schema-validation" class="hash-link" aria-label="Direct link to BackupRepository Schema Validation" title="Direct link to BackupRepository Schema Validation">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-api-fixes">🐛 API Fixes<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.1#-api-fixes" class="hash-link" aria-label="Direct link to 🐛 API Fixes" title="Direct link to 🐛 API Fixes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backuprepository-schema-validation">BackupRepository Schema Validation<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.1#backuprepository-schema-validation" class="hash-link" aria-label="Direct link to BackupRepository Schema Validation" title="Direct link to BackupRepository Schema Validation">​</a></h3>
 <ul>
 <li>Fixed a validation issue where the <code>generateName</code> field in <code>BackupRepository</code> was expected but not provided.</li>
 <li>This field is now marked as <strong>optional</strong> with a sensible default.</li>
 </ul>
 <p>✅ Closes <a href="https://github.com/seriohub/vui-ui/issues/79" target="_blank" rel="noopener noreferrer">vui-ui#79</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backupresponse-schema-robustness">BackupResponse Schema Robustness<a href="https://vui.seriohub.com/blog/vui-0.4.1#backupresponse-schema-robustness" class="hash-link" aria-label="Direct link to BackupResponse Schema Robustness" title="Direct link to BackupResponse Schema Robustness">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backupresponse-schema-robustness">BackupResponse Schema Robustness<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.1#backupresponse-schema-robustness" class="hash-link" aria-label="Direct link to BackupResponse Schema Robustness" title="Direct link to BackupResponse Schema Robustness">​</a></h3>
 <p>Improved resilience when parsing Velero backup hook data:</p>
 <ul>
 <li>Handles unexpected types in <code>labelSelector</code> (was dict, expected string)</li>
@@ -45,23 +45,23 @@
         </item>
         <item>
             <title><![CDATA[VUI 0.4.0]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.4.0</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.4.0</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.4.0</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.4.0</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Major improvements to the dashboard, new features for backup visibility, and UI/UX enhancements across the board.]]></description>
             <content:encoded><![CDATA[<p>We’re excited to announce the release of <strong>VUI 0.4.0</strong>, bundled with <strong>Helm Chart v1.0.5</strong> — a major update that enhances visibility, usability, and multi-cluster readiness.</p>
 <p>This release builds upon the recent introduction of <code>vui-core</code>, delivering upgrades across both the <strong>API</strong> and <strong>UI</strong> for a more seamless and powerful experience.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">🚀 What’s New<a href="https://vui.seriohub.com/blog/vui-0.4.0#-whats-new" class="hash-link" aria-label="Direct link to 🚀 What’s New" title="Direct link to 🚀 What’s New">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-smarter-dashboards">🧠 Smarter Dashboards<a href="https://vui.seriohub.com/blog/vui-0.4.0#-smarter-dashboards" class="hash-link" aria-label="Direct link to 🧠 Smarter Dashboards" title="Direct link to 🧠 Smarter Dashboards">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">🚀 What’s New<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-whats-new" class="hash-link" aria-label="Direct link to 🚀 What’s New" title="Direct link to 🚀 What’s New">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-smarter-dashboards">🧠 Smarter Dashboards<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-smarter-dashboards" class="hash-link" aria-label="Direct link to 🧠 Smarter Dashboards" title="Direct link to 🧠 Smarter Dashboards">​</a></h3>
 <ul>
 <li><strong>Improved Recent Backups Table</strong>: Redesigned layout and better performance for reviewing the latest backup activities.</li>
 <li><strong>Unscheduled Namespaces</strong>: New panel lets you quickly schedule backups for newly discovered namespaces.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-backup-statistics">📊 Backup Statistics<a href="https://vui.seriohub.com/blog/vui-0.4.0#-backup-statistics" class="hash-link" aria-label="Direct link to 📊 Backup Statistics" title="Direct link to 📊 Backup Statistics">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-backup-statistics">📊 Backup Statistics<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-backup-statistics" class="hash-link" aria-label="Direct link to 📊 Backup Statistics" title="Direct link to 📊 Backup Statistics">​</a></h3>
 <ul>
 <li><strong>Backup Overview Panel</strong>: A new section provides immediate insights into backup activity across your schedules.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-enhanced-ux--design">🎨 Enhanced UX &amp; Design<a href="https://vui.seriohub.com/blog/vui-0.4.0#-enhanced-ux--design" class="hash-link" aria-label="Direct link to 🎨 Enhanced UX &amp; Design" title="Direct link to 🎨 Enhanced UX &amp; Design">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-enhanced-ux--design">🎨 Enhanced UX &amp; Design<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-enhanced-ux--design" class="hash-link" aria-label="Direct link to 🎨 Enhanced UX &amp; Design" title="Direct link to 🎨 Enhanced UX &amp; Design">​</a></h3>
 <ul>
 <li><strong>Refreshed Visuals</strong>: Updated icons, colors, and loaders deliver a more polished and consistent UI.</li>
 <li><strong>Tables Overhaul</strong>: Tables have been completely restructured. You can now:<!-- -->
@@ -74,23 +74,23 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-improved-interactions">🔍 Improved Interactions<a href="https://vui.seriohub.com/blog/vui-0.4.0#-improved-interactions" class="hash-link" aria-label="Direct link to 🔍 Improved Interactions" title="Direct link to 🔍 Improved Interactions">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-improved-interactions">🔍 Improved Interactions<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-improved-interactions" class="hash-link" aria-label="Direct link to 🔍 Improved Interactions" title="Direct link to 🔍 Improved Interactions">​</a></h3>
 <ul>
 <li><strong>Log Search</strong>: Easily search inside log outputs.</li>
 <li><strong>Manifest Search</strong>: Quickly locate specific entries within backup manifests.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-core-support--multi-cluster">⚙️ Core Support &amp; Multi-Cluster<a href="https://vui.seriohub.com/blog/vui-0.4.0#%EF%B8%8F-core-support--multi-cluster" class="hash-link" aria-label="Direct link to ⚙️ Core Support &amp; Multi-Cluster" title="Direct link to ⚙️ Core Support &amp; Multi-Cluster">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-core-support--multi-cluster">⚙️ Core Support &amp; Multi-Cluster<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#%EF%B8%8F-core-support--multi-cluster" class="hash-link" aria-label="Direct link to ⚙️ Core Support &amp; Multi-Cluster" title="Direct link to ⚙️ Core Support &amp; Multi-Cluster">​</a></h3>
 <ul>
 <li><strong>Core-Aware Components</strong>: Key features like <code>BackupDetails</code> now include awareness of <code>vui-core</code> environments, improving centralized operations and agent integration.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-fixes--maintenance">🐞 Fixes &amp; Maintenance<a href="https://vui.seriohub.com/blog/vui-0.4.0#-fixes--maintenance" class="hash-link" aria-label="Direct link to 🐞 Fixes &amp; Maintenance" title="Direct link to 🐞 Fixes &amp; Maintenance">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-fixes--maintenance">🐞 Fixes &amp; Maintenance<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-fixes--maintenance" class="hash-link" aria-label="Direct link to 🐞 Fixes &amp; Maintenance" title="Direct link to 🐞 Fixes &amp; Maintenance">​</a></h2>
 <ul>
 <li>Resolved issues with undefined values in API stats</li>
 <li>Suppressed noisy UI warnings</li>
 <li>Removed legacy and unused logic</li>
 <li>Improved in-memory caching and token flow reliability</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-performance--polish">⚡ Performance &amp; Polish<a href="https://vui.seriohub.com/blog/vui-0.4.0#-performance--polish" class="hash-link" aria-label="Direct link to ⚡ Performance &amp; Polish" title="Direct link to ⚡ Performance &amp; Polish">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-performance--polish">⚡ Performance &amp; Polish<a href="https://seriohub.github.io/vui-docs/blog/vui-0.4.0#-performance--polish" class="hash-link" aria-label="Direct link to ⚡ Performance &amp; Polish" title="Direct link to ⚡ Performance &amp; Polish">​</a></h2>
 <ul>
 <li>Debounce delay lowered for snappier UI response</li>
 <li>Cleaner code, improved auth logic, and dependency updates</li>
@@ -98,43 +98,43 @@
 <hr>
 <p>As always, detailed changelogs are available in the official <a href="https://github.com/seriohub/vui-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">API changelog</a> and <a href="https://github.com/seriohub/vui-ui/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">UI changelog</a>.</p>
 <p>If you're already using VUI or exploring centralized backup management with <code>vui-core</code>, this release is highly recommended.</p>
-<p>👉 To get started or upgrade, see the <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/installation-scenarios">Installation Scenarios Guide</a>.</p>
+<p>👉 To get started or upgrade, see the <a href="https://seriohub.github.io/vui-docs/docs/getting-started/installation/scenarios/installation-scenarios">Installation Scenarios Guide</a>.</p>
 <hr>
 <p>Thanks for supporting and contributing to the VUI project!<br>
 <!-- -->Feel free to open an issue or reach out with suggestions or feedback.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Vui 0.3.3]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.3.3</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.3.3</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.3.3</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.3.3</guid>
             <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A feature-packed release introducing cache configuration, protocol control, Apprise integration, and template improvements.]]></description>
             <content:encoded><![CDATA[<p>Vui 0.3.3, released with Helm Chart v1.0.4, introduces powerful new configuration options and improvements aimed at enhancing flexibility, performance, and deployment clarity. This release focuses on API caching, protocol customization, alerting integration, and broader support for diverse environments.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">🔧 What's New<a href="https://vui.seriohub.com/blog/vui-0.3.3#-whats-new" class="hash-link" aria-label="Direct link to 🔧 What's New" title="Direct link to 🔧 What's New">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-configurable-api-response-caching">⏱️ Configurable API Response Caching<a href="https://vui.seriohub.com/blog/vui-0.3.3#%EF%B8%8F-configurable-api-response-caching" class="hash-link" aria-label="Direct link to ⏱️ Configurable API Response Caching" title="Direct link to ⏱️ Configurable API Response Caching">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">🔧 What's New<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-whats-new" class="hash-link" aria-label="Direct link to 🔧 What's New" title="Direct link to 🔧 What's New">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-configurable-api-response-caching">⏱️ Configurable API Response Caching<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#%EF%B8%8F-configurable-api-response-caching" class="hash-link" aria-label="Direct link to ⏱️ Configurable API Response Caching" title="Direct link to ⏱️ Configurable API Response Caching">​</a></h3>
 <p>You can now configure the in-memory <strong>Time To Live (TTL)</strong> for cached <code>GET</code> API responses using the new:</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">uiService</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">config</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">cacheTTL</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">180</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>The cacheTTL value defines how long the frontend should retain API responses before revalidating them.
 This caching mechanism works in tandem with a watch-based event system: when changes occur in Kubernetes resources, the frontend automatically refreshes the relevant data in real time—ensuring up-to-date views without sacrificing performance.</p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-protocol-configuration-for-clusterip-mode">🌐 Protocol Configuration for ClusterIP Mode<a href="https://vui.seriohub.com/blog/vui-0.3.3#-protocol-configuration-for-clusterip-mode" class="hash-link" aria-label="Direct link to 🌐 Protocol Configuration for ClusterIP Mode" title="Direct link to 🌐 Protocol Configuration for ClusterIP Mode">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-protocol-configuration-for-clusterip-mode">🌐 Protocol Configuration for ClusterIP Mode<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-protocol-configuration-for-clusterip-mode" class="hash-link" aria-label="Direct link to 🌐 Protocol Configuration for ClusterIP Mode" title="Direct link to 🌐 Protocol Configuration for ClusterIP Mode">​</a></h3>
 <p>For deployments where <code>exposure.mode</code> is set to <strong>clusterIP</strong>, you can now explicitly configure:</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">exposure</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">mode</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> clusterIP</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">clusterIP</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">protocol</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> http</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">wsProtocol</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> ws</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">localAddress</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    apiPort</span><span class="token punctuation" style="color:#393A34">:</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-apprise-notification-integration">🔔 Apprise Notification Integration<a href="https://vui.seriohub.com/blog/vui-0.3.3#-apprise-notification-integration" class="hash-link" aria-label="Direct link to 🔔 Apprise Notification Integration" title="Direct link to 🔔 Apprise Notification Integration">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-apprise-notification-integration">🔔 Apprise Notification Integration<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-apprise-notification-integration" class="hash-link" aria-label="Direct link to 🔔 Apprise Notification Integration" title="Direct link to 🔔 Apprise Notification Integration">​</a></h3>
 <p>The Helm chart now supports notification integration using <strong>Apprise</strong>, a powerful notification library.</p>
 <p>You can enable it with:</p>
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">watchdogService</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">config</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">apprise</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">""</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>This feature enables alerts and messages to be sent through multiple channels, including email, messaging apps, and more.</p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-docker-deployment-support">🐳 Docker Deployment Support<a href="https://vui.seriohub.com/blog/vui-0.3.3#-docker-deployment-support" class="hash-link" aria-label="Direct link to 🐳 Docker Deployment Support" title="Direct link to 🐳 Docker Deployment Support">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-docker-deployment-support">🐳 Docker Deployment Support<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-docker-deployment-support" class="hash-link" aria-label="Direct link to 🐳 Docker Deployment Support" title="Direct link to 🐳 Docker Deployment Support">​</a></h3>
 <p><strong>Vui</strong> can now be deployed seamlessly in Docker environments without requiring Kubernetes or cluster mode configuration.<br>
 <!-- -->This makes it easier to run the application in local development setups, CI pipelines, or lightweight production scenarios.</p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-improved-template-flexibility">🧩 Improved Template Flexibility<a href="https://vui.seriohub.com/blog/vui-0.3.3#-improved-template-flexibility" class="hash-link" aria-label="Direct link to 🧩 Improved Template Flexibility" title="Direct link to 🧩 Improved Template Flexibility">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-improved-template-flexibility">🧩 Improved Template Flexibility<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-improved-template-flexibility" class="hash-link" aria-label="Direct link to 🧩 Improved Template Flexibility" title="Direct link to 🧩 Improved Template Flexibility">​</a></h3>
 <p>We've refined the chart templates to better support various installation scenarios and custom setups. These improvements enhance compatibility across cloud environments and deployment pipelines.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-component-updates">🔄 Component Updates<a href="https://vui.seriohub.com/blog/vui-0.3.3#-component-updates" class="hash-link" aria-label="Direct link to 🔄 Component Updates" title="Direct link to 🔄 Component Updates">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-component-updates">🔄 Component Updates<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-component-updates" class="hash-link" aria-label="Direct link to 🔄 Component Updates" title="Direct link to 🔄 Component Updates">​</a></h2>
 <ul>
 <li>📦 <strong>appVersion</strong>: upgraded to 0.3.3</li>
 <li>🚀 <strong>API</strong>: updated to version 0.2.7</li>
@@ -142,7 +142,7 @@ This caching mechanism works in tandem with a watch-based event system: when cha
 </ul>
 <p>These updates bring performance improvements, bug fixes, and UI refinements aligned with the core application updates.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-how-to-upgrade">📦 How to Upgrade<a href="https://vui.seriohub.com/blog/vui-0.3.3#-how-to-upgrade" class="hash-link" aria-label="Direct link to 📦 How to Upgrade" title="Direct link to 📦 How to Upgrade">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-how-to-upgrade">📦 How to Upgrade<a href="https://seriohub.github.io/vui-docs/blog/vui-0.3.3#-how-to-upgrade" class="hash-link" aria-label="Direct link to 📦 How to Upgrade" title="Direct link to 📦 How to Upgrade">​</a></h2>
 <p>To upgrade to the latest version:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm repo update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">helm upgrade my-release seriohub/vui --version 1.0.4</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Make sure to review any breaking changes or new configuration options in your <code>values.yaml</code>.</p>
@@ -152,17 +152,17 @@ This caching mechanism works in tandem with a watch-based event system: when cha
         </item>
         <item>
             <title><![CDATA[Vui 0.3.0]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.3.0</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.3.0</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.3.0</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.3.0</guid>
             <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A major chart release introducing structural improvements, support for core components, and breaking changes.]]></description>
             <content:encoded><![CDATA[<p>🚀 <strong>A Major Milestone for Deployment</strong></p>
 <p>We’re excited to announce the release of Vui 0.3.0 alongside Helm Chart 1.0.0, a significant step forward for deployment flexibility, clarity, and component modularity. This release introduces structural changes, new installation options, and support for advanced components.</p>
 <p>🚨 <strong>Breaking Changes</strong></p>
 <p>With this version, the Helm chart structure has been completely refactored. Deprecated fields have been removed, new required values introduced, and the entire layout optimized for clarity and maintainability.</p>
-<p>⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/installation-scenarios">scenario-based</a> installations.</p>
+<p>⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for <a href="https://seriohub.github.io/vui-docs/docs/getting-started/installation/scenarios/installation-scenarios">scenario-based</a> installations.</p>
 <p>🆕 <strong>Core Support</strong></p>
-<p>This release introduces support for the new <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster-installation">core</a> component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.</p>
+<p>This release introduces support for the new <a href="https://seriohub.github.io/vui-docs/docs/getting-started/installation/scenarios/core-cluster-installation">core</a> component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.</p>
 <p>Organizations with access to this component can now deploy it directly via Helm. This marks an important step in our effort to offer modular extensibility to those contributing most actively to the project’s growth.</p>
 <p>🛠 <strong>Improvements &amp; Installation Scenarios</strong></p>
 <p>We’ve added dedicated templates for different usage contexts:</p>
@@ -186,8 +186,8 @@ This caching mechanism works in tandem with a watch-based event system: when cha
         </item>
         <item>
             <title><![CDATA[Vui 0.2.0]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.2.0</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.2.0</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.2.0</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.2.0</guid>
             <pubDate>Wed, 05 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
             <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>
@@ -231,8 +231,8 @@ This caching mechanism works in tandem with a watch-based event system: when cha
         </item>
         <item>
             <title><![CDATA[Vui 0.1.20]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.1.20</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.1.20</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.1.20</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.1.20</guid>
             <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
             <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>
@@ -264,8 +264,8 @@ This caching mechanism works in tandem with a watch-based event system: when cha
         </item>
         <item>
             <title><![CDATA[Vui 0.1.19]]></title>
-            <link>https://vui.seriohub.com/blog/vui-0.1.19</link>
-            <guid>https://vui.seriohub.com/blog/vui-0.1.19</guid>
+            <link>https://seriohub.github.io/vui-docs/blog/vui-0.1.19</link>
+            <guid>https://seriohub.github.io/vui-docs/blog/vui-0.1.19</guid>
             <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
             <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>

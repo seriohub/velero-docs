@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvelero_docs=self.webpackChunkvelero_docs||[]).push([[8645],{7181:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/vui-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":7,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
